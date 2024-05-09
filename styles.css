@@ -11,18 +11,6 @@
     
 }
 
-@media (max-width: 768px) {
-    .main {
-        background-color: red;
-    }
-}
-
-@media (max-width: 600px) {
-    .main {
-        background-color: green;
-    }
-}
-
 
 @media (max-width: 1200px) {
     .main {
@@ -118,6 +106,12 @@
 }
 
 @media (max-width: 768px) {
+    .main {
+        background-color: red;
+    }
+    .head {
+        flex-direction: column;
+    }
     .mid {
       flex-direction: column;
     }
@@ -125,6 +119,10 @@
     .mid-block,
     .side-block {
       flex: 1;
+    }
+    .head1, .head2, .head3{
+        display: flex;
+        width: 96%;
     }
     
 }
@@ -164,13 +162,16 @@
     }
 
    @media (max-width: 600px) {
+    .main {
+        background-color: green;
+    }
         .mid-block {
             display: flex;
             flex-direction: column;
         }
         .head1, .head2, .head3{
             display: flex;
-            width: 33%;
+            width: 96%;
           }
     }
     
